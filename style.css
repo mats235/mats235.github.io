@@ -285,27 +285,36 @@ body {
     position: relative;
     width: 340px;
     height: 340px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
 }
 
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
+.profile-photo{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
 
-    border: 5px solid #00d4ff;
+    position:absolute;
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    z-index:2;
+
+    border:5px solid #00d4ff;
 
     box-shadow:
         0 0 20px #00d4ff,
         0 0 50px rgba(0,212,255,.5);
 
-    animation: float 4s ease-in-out infinite;
+    animation:float 4s ease-in-out infinite;
 }
-
 .glow-ring {
     width: 340px;
     height: 340px;
